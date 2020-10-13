@@ -15,18 +15,17 @@ CONVENTIONAL_PRODUCE = [
 ]
 
 def assembled_matrix
-  array = [CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
+  matrix = [CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
 end
 
 def sorted_matrix
-  array = [
+  matrix = [
     CONVENTIONAL_PRODUCE.sort, ORGANIC_PRODUCE.sort
     ]
 end
 
 def matrix_lookup(matrix, row, column)
-  # Given any matrix (array of arrays), a row index and a column index, 
-  # Return the matrix's content at that row and and column
+  matrix[row][column]
 end
 
 def matrix_update(matrix, row, column, new_value)
